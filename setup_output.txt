@@ -1,0 +1,47 @@
+
+c:\Users\sidk4\work_Docs\DW\cpn foods\cpn-backend>git init 
+Initialized empty Git repository in C:/Users/sidk4/work_Docs/DW/cpn foods/cpn-backend/.git/
+
+c:\Users\sidk4\work_Docs\DW\cpn foods\cpn-backend>git add . 
+warning: in the working copy of '.gitattributes', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.mvn/wrapper/maven-wrapper.properties', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'backend_push_log.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'mvnw.cmd', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'pom.xml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'setup_backend.bat', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/cpn/backend/CpnBackendApplication.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/cpn/backend/config/DataLoader.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/cpn/backend/controller/ProductController.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/cpn/backend/models/IdealWith.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/cpn/backend/models/MasalaProduct.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/cpn/backend/models/ProductVariant.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/cpn/backend/models/TasteProfile.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/cpn/backend/repository/MasalaProductRepository.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/cpn/backend/repository/ProductSpecification.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/cpn/backend/service/ProductService.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/resources/application.properties', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/test/java/com/cpn/backend/CpnBackendApplicationTests.java', LF will be replaced by CRLF the next time Git touches it
+
+c:\Users\sidk4\work_Docs\DW\cpn foods\cpn-backend>git commit -m "Initialize standalone CPN_backend repository" 
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'sidk4@Siddd.(none)')
+
+c:\Users\sidk4\work_Docs\DW\cpn foods\cpn-backend>git remote add origin https://github.com/Sid-Dev-alt/CPN_backend.git   || git remote set-url origin https://github.com/Sid-Dev-alt/CPN_backend.git 
+
+c:\Users\sidk4\work_Docs\DW\cpn foods\cpn-backend>git branch -M main 
+
+c:\Users\sidk4\work_Docs\DW\cpn foods\cpn-backend>git push -f origin main 
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Sid-Dev-alt/CPN_backend.git'
