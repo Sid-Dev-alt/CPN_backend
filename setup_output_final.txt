@@ -1,0 +1,49 @@
+
+c:\Users\sidk4\work_Docs\DW\cpn foods\cpn-backend>git config user.email "sidk4@example.com" 
+
+c:\Users\sidk4\work_Docs\DW\cpn foods\cpn-backend>git config user.name "Sid" 
+
+c:\Users\sidk4\work_Docs\DW\cpn foods\cpn-backend>git init 
+Reinitialized existing Git repository in C:/Users/sidk4/work_Docs/DW/cpn foods/cpn-backend/.git/
+
+c:\Users\sidk4\work_Docs\DW\cpn foods\cpn-backend>git add . 
+warning: in the working copy of 'setup_backend.bat', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'setup_output.txt', LF will be replaced by CRLF the next time Git touches it
+
+c:\Users\sidk4\work_Docs\DW\cpn foods\cpn-backend>git commit -m "Initialize standalone CPN_backend repository" 
+[main (root-commit) 70fab6c] Initialize standalone CPN_backend repository
+ 25 files changed, 1047 insertions(+)
+ create mode 100644 .gitattributes
+ create mode 100644 .gitignore
+ create mode 100644 .mvn/wrapper/maven-wrapper.properties
+ create mode 100644 backend_push_log.txt
+ create mode 100644 build.log
+ create mode 100644 maven_errors.txt
+ create mode 100644 maven_errors2.txt
+ create mode 100644 mvnw
+ create mode 100644 mvnw.cmd
+ create mode 100644 pom.xml
+ create mode 100644 setup_backend.bat
+ create mode 100644 setup_output.txt
+ create mode 100644 setup_output_final.txt
+ create mode 100644 src/main/java/com/cpn/backend/CpnBackendApplication.java
+ create mode 100644 src/main/java/com/cpn/backend/config/DataLoader.java
+ create mode 100644 src/main/java/com/cpn/backend/controller/ProductController.java
+ create mode 100644 src/main/java/com/cpn/backend/models/IdealWith.java
+ create mode 100644 src/main/java/com/cpn/backend/models/MasalaProduct.java
+ create mode 100644 src/main/java/com/cpn/backend/models/ProductVariant.java
+ create mode 100644 src/main/java/com/cpn/backend/models/TasteProfile.java
+ create mode 100644 src/main/java/com/cpn/backend/repository/MasalaProductRepository.java
+ create mode 100644 src/main/java/com/cpn/backend/repository/ProductSpecification.java
+ create mode 100644 src/main/java/com/cpn/backend/service/ProductService.java
+ create mode 100644 src/main/resources/application.properties
+ create mode 100644 src/test/java/com/cpn/backend/CpnBackendApplicationTests.java
+
+c:\Users\sidk4\work_Docs\DW\cpn foods\cpn-backend>git remote add origin https://github.com/Sid-Dev-alt/CPN_backend.git   || git remote set-url origin https://github.com/Sid-Dev-alt/CPN_backend.git 
+error: remote origin already exists.
+
+c:\Users\sidk4\work_Docs\DW\cpn foods\cpn-backend>git branch -M main 
+
+c:\Users\sidk4\work_Docs\DW\cpn foods\cpn-backend>git push -f origin main 
+To https://github.com/Sid-Dev-alt/CPN_backend.git
+ * [new branch]      main -> main

@@ -5,10 +5,12 @@ import com.cpn.backend.models.MasalaProduct;
 import com.cpn.backend.repository.MasalaProductRepository;
 import com.cpn.backend.repository.ProductSpecification;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 @Service
+@Transactional
 public class ProductService {
 
     private final MasalaProductRepository repository;

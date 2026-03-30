@@ -2,7 +2,6 @@ package com.cpn.backend.models;
 
 import jakarta.persistence.*;
 import lombok.Data;
-import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -25,13 +24,13 @@ public class MasalaProduct {
     @Embedded
     private TasteProfile tasteProfile;
 
-    @ElementCollection(targetClass = IdealWith.class, fetch = FetchType.EAGER)
+    @ElementCollection(targetClass = IdealWith.class, fetch = FetchType.LAZY)
     @Enumerated(EnumType.STRING)
     @CollectionTable(name = "product_ideal_with", joinColumns = @JoinColumn(name = "product_id"))
     @Column(name = "meal_type")
     private Set<IdealWith> idealWith;
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     @JoinColumn(name = "product_id")
-    private List<ProductVariant> variants;
+    private Set<ProductVariant> variants;
 }

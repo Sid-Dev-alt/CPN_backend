@@ -7,7 +7,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import java.util.Arrays;
-import java.util.List;
 import java.util.Set;
 
 @Configuration
@@ -16,6 +15,12 @@ public class DataLoader {
     @Bean
     public CommandLineRunner loadData(MasalaProductRepository repository) {
         return args -> {
+            // Only seed if the table is empty — avoids duplicate inserts on restart
+            if (repository.count() > 0) {
+                System.out.println("Data already exists, skipping seed.");
+                return;
+            }
+
             // Load Product 1: Guntur Chilli Powder
             MasalaProduct p1 = new MasalaProduct();
             p1.setName("Guntur chilli powder");
@@ -42,7 +47,7 @@ public class DataLoader {
             v1_2.setPrice(165.0);
             v1_2.setDiscountedPrice(165.0);
             
-            p1.setVariants(Arrays.asList(v1_1, v1_2));
+            p1.setVariants(Set.of(v1_1, v1_2));
 
             // Load Product 2: Bisibelebath Masala
             MasalaProduct p2 = new MasalaProduct();
@@ -70,7 +75,7 @@ public class DataLoader {
             v2_2.setPrice(175.0);
             v2_2.setDiscountedPrice(175.0);
             
-            p2.setVariants(Arrays.asList(v2_1, v2_2));
+            p2.setVariants(Set.of(v2_1, v2_2));
 
             repository.saveAll(Arrays.asList(p1, p2));
             System.out.println("Dummy data explicitly loaded!");
