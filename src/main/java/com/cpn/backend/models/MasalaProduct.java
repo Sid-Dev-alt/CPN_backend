@@ -24,14 +24,11 @@ public class MasalaProduct {
     @Embedded
     private TasteProfile tasteProfile;
 
-    @ElementCollection(targetClass = IdealWith.class, fetch = FetchType.LAZY)
-    @CollectionTable(
-            name = "product_ideal_with",
-            joinColumns = @JoinColumn(name = "product_id"))
-    @Column(name = "meal_type")
-    @Enumerated(EnumType.STRING)
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @JoinColumn(name = "product_id")
+    private Set<ProductIdealWith> idealWith;
     @OrderColumn(name = "id")
-    private Set<IdealWith> idealWith;
+
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     @JoinColumn(name = "product_id")
