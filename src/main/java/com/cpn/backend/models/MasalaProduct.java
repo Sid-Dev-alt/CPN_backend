@@ -25,9 +25,12 @@ public class MasalaProduct {
     private TasteProfile tasteProfile;
 
     @ElementCollection(targetClass = IdealWith.class, fetch = FetchType.LAZY)
-    @Enumerated(EnumType.STRING)
-    @CollectionTable(name = "product_ideal_with", joinColumns = @JoinColumn(name = "product_id"))
+    @CollectionTable(
+            name = "product_ideal_with",
+            joinColumns = @JoinColumn(name = "product_id"))
     @Column(name = "meal_type")
+    @Enumerated(EnumType.STRING)
+    @OrderColumn(name = "id")
     private Set<IdealWith> idealWith;
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
