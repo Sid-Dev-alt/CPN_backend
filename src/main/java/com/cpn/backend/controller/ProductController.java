@@ -9,7 +9,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/masalas")
-@CrossOrigin(origins = "*") // Allow any origin for local dev
 public class ProductController {
 
     private final ProductService productService;
