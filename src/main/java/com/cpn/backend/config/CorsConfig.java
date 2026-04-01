@@ -17,7 +17,8 @@ public class CorsConfig {
                 registry.addMapping("/api/**")
                         .allowedOrigins(
                                 "http://localhost:5173",
-                                "https://sid-dev-alt.github.io"
+                                "https://sid-dev-alt.github.io",
+                                "https://cpn-foods-homepage.onrender.com"
                         )
                         .allowedMethods("*")
                         .allowedHeaders("*");
