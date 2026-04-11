@@ -18,7 +18,9 @@ public class CorsConfig {
                         .allowedOrigins(
                                 "http://localhost:5173",
                                 "https://sid-dev-alt.github.io",
-                                "https://cpn-foods-homepage.onrender.com"
+                                "https://cpn-foods-homepage.onrender.com",
+                                "https://cpnfoods.com",
+                                "https://www.cpnfoods.com"
                         )
                         .allowedMethods("*")
                         .allowedHeaders("*");
