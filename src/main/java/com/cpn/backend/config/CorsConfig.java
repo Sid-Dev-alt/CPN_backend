@@ -20,7 +20,8 @@ public class CorsConfig {
                                 "https://sid-dev-alt.github.io",
                                 "https://cpn-foods-homepage.onrender.com",
                                 "https://cpnfoods.com",
-                                "https://www.cpnfoods.com"
+                                "https://www.cpnfoods.com",
+                                "http://168.144.112.207"
                         )
                         .allowedMethods("*")
                         .allowedHeaders("*");
